@@ -135,8 +135,8 @@
                             android:id="@+id/innings_teamA"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="20dp"
-                            android:text="0"
+                            android:textSize="20sp"
+                            android:text="1"
                             android:background="#757575"
                             android:padding="10dp"
                             android:layout_margin="10dp"/>
@@ -253,7 +253,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="20dp"
-                            android:text="0"
+                            android:text="1"
                             android:padding="10dp"
                             android:background="#757575"
                             android:layout_margin="10dp"/>
@@ -272,22 +272,36 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="runa"/>
+                    android:text="runa"
+                    android:onClick="takeruna"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="outa"/>
+                    android:text="outa"
+                    android:onClick="batterouta"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="runb"/>
+                    android:text="runb"
+                    android:onClick="takerunb"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="outb"/>
+                    android:text="outb"
+                    android:onClick="batteroutb"/>
+
             </LinearLayout>
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/won"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Who won?"
+            android:textSize="32sp"
+            android:textColor="@android:color/black"/>
 
     </RelativeLayout>
 
